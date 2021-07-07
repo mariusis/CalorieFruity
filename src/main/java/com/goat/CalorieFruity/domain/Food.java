@@ -22,6 +22,22 @@ public class Food {
     private int cholesterol;
     private double saturatedFats;
 
+    public Food() {
+    }
+
+    public Food(String name, String foodGroup, int calories, double fat, double protein, double carbohydrate, double sugars, double fiber, int cholesterol, double saturatedFats) {
+        this.name = name;
+        this.foodGroup = foodGroup;
+        this.calories = calories;
+        this.fat = fat;
+        this.protein = protein;
+        this.carbohydrate = carbohydrate;
+        this.sugars = sugars;
+        this.fiber = fiber;
+        this.cholesterol = cholesterol;
+        this.saturatedFats = saturatedFats;
+    }
+
     public String getName() {
         return name;
     }
@@ -100,5 +116,21 @@ public class Food {
 
     public void setSaturatedFats(double saturatedFats) {
         this.saturatedFats = saturatedFats;
+    }
+
+    @Override
+    public String toString() {
+        return "Food{" +
+                ", name='" + name + '\'' +
+                ", foodGroup='" + foodGroup + '\'' +
+                ", calories=" + calories +
+                ", fat=" + fat +
+                ", protein=" + protein +
+                ", carbohydrate=" + carbohydrate +
+                ", sugars=" + sugars +
+                ", fiber=" + fiber +
+                ", cholesterol=" + cholesterol +
+                ", saturatedFats=" + saturatedFats +
+                '}';
     }
 }

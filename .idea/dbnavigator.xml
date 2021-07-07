@@ -27,6 +27,7 @@
     <loaded-nodes>
       <connection connection-id="3502997e-b831-4834-8404-909c785f01bb">
         <schema name="fruity" object-types="table, view" />
+        <schema name="sql_store" object-types="table, view, function, column" />
       </connection>
     </loaded-nodes>
   </component>
@@ -35,7 +36,7 @@
       <console name="Connection" type="STANDARD" schema="" session="Main"><![CDATA[use fruity;]]></console>
     </connection>
     <connection id="3502997e-b831-4834-8404-909c785f01bb">
-      <console name="Connection 1" type="STANDARD" schema="fruity" session="Main"><![CDATA[select * from foods]]></console>
+      <console name="Connection 1" type="STANDARD" schema="sql_store" session="Main"><![CDATA[select * from customers;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
