@@ -1,7 +1,6 @@
-package com.goat.CalorieFruity.controllers;
+package com.goat.CalorieFruity.Food;
 
-import com.goat.CalorieFruity.domain.Food;
-import org.springframework.stereotype.Controller;
+import com.goat.CalorieFruity.Food.Food;
 import org.springframework.web.bind.annotation.*;
 
 
