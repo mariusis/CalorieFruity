@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -27,7 +27,6 @@
     <loaded-nodes>
       <connection connection-id="3502997e-b831-4834-8404-909c785f01bb">
         <schema name="fruity" object-types="table, view" />
-        <schema name="sql_store" object-types="table, view, function, column" />
       </connection>
     </loaded-nodes>
   </component>
@@ -36,7 +35,7 @@
       <console name="Connection" type="STANDARD" schema="" session="Main"><![CDATA[use fruity;]]></console>
     </connection>
     <connection id="3502997e-b831-4834-8404-909c785f01bb">
-      <console name="Connection 1" type="STANDARD" schema="sql_store" session="Main"><![CDATA[select * from customers;]]></console>
+      <console name="Connection 1" type="STANDARD" schema="fruity" session="Main"><![CDATA[select * from foods]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -45,6 +44,9 @@
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="f6f435da-e353-4539-a06a-664ce9fbfac3" />
     <connection id="3502997e-b831-4834-8404-909c785f01bb" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="3502997e-b831-4834-8404-909c785f01bb" dataset="fruity.users" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />

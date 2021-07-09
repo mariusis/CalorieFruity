@@ -2,11 +2,10 @@ package com.goat.CalorieFruity.Food;
 
 import org.springframework.stereotype.Component;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Component
+@Entity
+@Table(name = "foods")
 public class Food {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

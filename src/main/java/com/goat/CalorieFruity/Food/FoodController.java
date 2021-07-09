@@ -1,15 +1,21 @@
 package com.goat.CalorieFruity.Food;
 
-import com.goat.CalorieFruity.Food.Food;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Collections;
+import java.util.List;
 
 
 @RestController
+@RequestMapping (path = "/foods")
 public class FoodController {
+    @Autowired
+    FoodService foodService;
 
-    @RequestMapping (path = "/foods")
-    Food returnFood(){
-        return new Food("apple","Fruit",2,2,2,2,2,2,2,2);
+    @GetMapping
+   public List<String> getFoods(){
+        return Collections.emptyList();
     }
 
 
