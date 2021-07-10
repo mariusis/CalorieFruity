@@ -3,6 +3,7 @@ package com.goat.CalorieFruity.Food;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,7 +16,7 @@ public class FoodController {
 
     @GetMapping
    public List<String> getFoods(){
-        return Collections.emptyList();
+        return foodService.getFoods();
     }
 
 
