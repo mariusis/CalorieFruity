@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   
         
 <head>
@@ -8,8 +8,9 @@
  
 </head>
 <body >
+<img class="Logo" th:hrc="{/resources/CalorieFruityLogo.jpg}"/>
 <div>
-<img class="Logo" src="resources/Logo.jpg">
+
 <p class="Name">Calorie Fruity</p>
 
 <div class="LogSign">
@@ -54,7 +55,7 @@
 
 <style>
     .PageMenu {
-  width: 1150px;
+  width: 100%;
   position: absolute;
   left: -2px;
   top: 50px;
@@ -96,11 +97,9 @@ label {
   right: 10px;
 }
 .Logo {
-  object-fit: fill;
+
   width: 30px;
   height: 30px;
-  border-radius: 15px;
-  overflow: hidden;
 }
 .Name {
   position: absolute;
