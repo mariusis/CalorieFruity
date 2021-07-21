@@ -1,11 +1,11 @@
-package com.goat.CalorieFruity.Food;
+package com.goat.CalorieFruity.services;
 
+import com.goat.CalorieFruity.model.Food;
+import com.goat.CalorieFruity.repositories.foodRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 @Service
 public class FoodService {
@@ -13,19 +13,15 @@ public class FoodService {
 
 
     private final foodRepository foodRepository;
-    @Autowired
+
     public FoodService(foodRepository foodRepository) {
         this.foodRepository = foodRepository;
     }
 
-    public List<String> getFoods(){
-     List<String> list = new ArrayList<>();
-        for(int i = 0;i<foodRepository.getFoodGroups().size();i++){
-            list.add(foodRepository.getFoodGroups().get(i));
+    public List<Food> getFoods(){
 
-        }
 
-        return list;
+        return foodRepository.getFood();
         }
 
 

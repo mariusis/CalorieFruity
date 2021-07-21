@@ -1,4 +1,4 @@
-package com.goat.CalorieFruity.Food;
+package com.goat.CalorieFruity.model;
 
 import org.springframework.stereotype.Component;
 
@@ -8,23 +8,32 @@ import javax.persistence.*;
 @Table(name = "foods")
 public class Food {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long ID;
+    @Column(name="name")
     private String name;
+    @Column(name="Food Group")
     private String foodGroup;
+    @Column(name="Calories")
     private int calories;
+    @Column(name="Fat(g)")
     private double fat;
+    @Column(name="Protein (g)")
     private double protein;
+    @Column(name="Carbohydrate (g)")
     private double carbohydrate;
+    @Column(name="Sugars (g)")
     private double sugars;
+    @Column(name="Fiber (g)")
     private double fiber ;
+    @Column(name="Cholesterol (mg)")
     private int cholesterol;
+    @Column(name="Saturated Fats (g)")
     private double saturatedFats;
 
     public Food() {
     }
 
-    public Food(String name, String foodGroup, int calories, double fat, double protein, double carbohydrate, double sugars, double fiber, int cholesterol, double saturatedFats) {
+    public Food(Long ID,String name, String foodGroup, int calories, double fat, double protein, double carbohydrate, double sugars, double fiber, int cholesterol, double saturatedFats) {
         this.name = name;
         this.foodGroup = foodGroup;
         this.calories = calories;
@@ -35,6 +44,10 @@ public class Food {
         this.fiber = fiber;
         this.cholesterol = cholesterol;
         this.saturatedFats = saturatedFats;
+    }
+
+    public Long getID() {
+        return ID;
     }
 
     public String getName() {

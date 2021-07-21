@@ -1,8 +1,5 @@
-C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\domain\Food.java
-C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\controllers\WebController.java
-C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\repositories\FoodRepositorie.java
-C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\repositories\UserRepositorie.java
-C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\controllers\UserController.java
+C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\model\Food.java
+C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\repositories\foodRepository.java
+C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\services\FoodService.java
 C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\controllers\FoodController.java
 C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\CalorieFruityApplication.java
-C:\Users\spide\OneDrive\Desktop\Java Projects\CalorieFruity\src\main\java\com\goat\CalorieFruity\domain\User.java
